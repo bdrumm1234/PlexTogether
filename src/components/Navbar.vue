@@ -45,7 +45,7 @@
                     <label>
                       Dark mode
                       <input v-model="darkMode" type="checkbox">
-                      <span style="background-color:#818181 !important;" class="lever"></span>
+                      <span style="background-color:#818181 !important; cursor: pointer" class="lever"></span>
                     </label>
                   </div>
                 </div>

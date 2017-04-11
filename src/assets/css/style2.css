@@ -61,6 +61,15 @@ a {
 	z-index: 2;
 }
 
+.btn {
+  background-color: #E5A00D !important;
+  cursor: pointer !important;
+}
+
+.btn:hover{
+  background-color: #faaf0f !important;
+}
+
 
 /*
 	TEXT
@@ -258,6 +267,7 @@ input[type=range] + .thumb {
 
 .circle {
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .center-block {
@@ -398,8 +408,8 @@ ul li {
 }
 
 .channel-textarea {
-    margin: 20px 0 30px;
-    padding: 0 10px 30px 10px;
+    margin: 20px 0 0;
+    padding: 0 10px 0 10px;
     width: 100%;
     position: relative;
     z-index: 1;
@@ -484,10 +494,6 @@ plexName {
 .dark-theme .progress {
   background-color: rgba(242, 243, 244, 0.1);
 }
-
-/* .dark-theme .progressbar {
-	background-color: #E5A00D;
-} */
 
 .dark-theme metadata {
 	background-color: #3F4245;

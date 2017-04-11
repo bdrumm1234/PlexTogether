@@ -1,6 +1,6 @@
 <template>
     <li>   
-        <div class="row" v-if="object.type == 'message'" style="margin: 2px; border-bottom-width: 1px; border-bottom-color: rgba(0,0,0,0.1); border-bottom-style: solid">
+        <div class="row" v-if="object.type == 'message'" style="margin: 5px; border-bottom-width: 1px; border-bottom-color: rgba(0,0,0,0.1); border-bottom-style: solid">
             <div class="hide-on-med-and-down col s2">
                 <img v-bind:src="object.user.thumb" class="circle plex-gamboge-border" style="height: 42px; width: 42px">
             </div>

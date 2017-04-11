@@ -1,5 +1,5 @@
 <template>
-	<div class="main-body mdc-typography" style="height: calc(100% - 64px)">
+	<div class="main-body" style="height: calc(100% - 64px)">
       <div class="nav-wrapper hide-on-large-only"><a id="logo-container" href="#" class="brand-logo"></a>
         <ul id="nav-mobile" class="side-nav" style="height: 100%">
           <sidebar :mobile="true"></sidebar>
@@ -30,9 +30,9 @@
               <!-- CHAT INTERFACE -->
 
               <div class="col l3 no-padding hide-on-med-and-down" id="plexTogetherChat" v-bind:style="{ display: showChatValue }" style="height: 100%">
-                  <div class="mdc-permanent-drawer chatInterface">
-                      <div class="mdc-permanent-drawer__toolbar-spacer" style="padding: 0; height: 76px">
-                          <div class="row" style="width: 100%;">
+                  <div class=" chatInterface">
+                      <div style="padding: 0; height: 76px">
+                          <div class="row" style="width: 100%; border-bottom: 1px solid rgba(0, 0, 0, 0.1)">
                               <div class="col l8  left-align truncate">
                                   <h2 id="plexTogetherRoomNameChat">{{ ptRoom }}</h2>                                  
                               </div>                              
@@ -41,14 +41,14 @@
                               </div>
                           </div>
                       </div>
-                      <div class="mdc-list-group" style="overflow-y: auto; height: calc(100% - 64px); top: 110px">
+                      <div class="" style="overflow-y: auto; height: calc(100% - 145px); top: 110px; border-bottom: 1px solid rgba(0, 0, 0, 0.1)">
                           <section>
                               <ul v-for="msg in messages" id="chatBox">
                                   <chatmessage :object="msg"></chatmessage>
                               </ul>
                           </section>
                       </div>      
-                      <div class="mdc-permanent-drawer__toolbar-spacer no-padding" style="border: 0">
+                      <div class="no-padding" style="border: 0">
                           <div class="channel-textarea">  
                               <div class="channel-textarea-inner">
                                   <div class="channel-textarea-upload">
@@ -86,7 +86,7 @@
  
 <script>
 // CSS imports
-import 'assets/css/material-components-web.css'; 
+// import 'assets/css/material-components-web.css'; 
 import 'assets/css/grid.css'; 
 import 'assets/css/style2.css'; 
 
@@ -108,8 +108,6 @@ import walkthrough from './application/walkthrough'
 import sidebar from './application/sidebar'
 
 import { SweetModal, SweetModalTab } from 'sweet-modal-vue'
-
-
 
 export default {
   name: 'application',

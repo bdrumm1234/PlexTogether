@@ -49,7 +49,7 @@
                     </div>                        
                 </div> 
                 <div v-if="ptConnected" class="col s12" style="padding:0">
-                    <button class="mdc-button mdc-button--raised mdc-button--accent plex-gamboge ptSettings disconnect" id="plexTogetherLeaveButton" style="width: 100%;" v-on:click="handleDisconnect()">
+                    <button class="btn" id="plexTogetherLeaveButton" style="width: 100%;" v-on:click="handleDisconnect()">
                         Disconnect
                     </button>
                 </div>
